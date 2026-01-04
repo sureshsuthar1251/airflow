@@ -1,0 +1,24 @@
+[2025-11-23T07:36:49.937+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: simple_python_dag.task_1 manual__2025-11-23T07:36:48.370834+00:00 [queued]>
+[2025-11-23T07:36:49.961+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: simple_python_dag.task_1 manual__2025-11-23T07:36:48.370834+00:00 [queued]>
+[2025-11-23T07:36:49.962+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2025-11-23T07:36:49.963+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2025-11-23T07:36:49.964+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2025-11-23T07:36:50.004+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): task_1> on 2025-11-23 07:36:48.370834+00:00
+[2025-11-23T07:36:50.017+0000] {standard_task_runner.py:55} INFO - Started process 580 to run task
+[2025-11-23T07:36:50.026+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'simple_python_dag', 'task_1', 'manual__2025-11-23T07:36:48.370834+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/python_dag_example.py', '--cfg-path', '/tmp/tmp26owzcdy']
+[2025-11-23T07:36:50.027+0000] {standard_task_runner.py:83} INFO - Job 60: Subtask task_1
+[2025-11-23T07:36:50.309+0000] {task_command.py:376} INFO - Running <TaskInstance: simple_python_dag.task_1 manual__2025-11-23T07:36:48.370834+00:00 [running]> on host f9e4ee478640
+[2025-11-23T07:36:50.429+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=simple_python_dag
+AIRFLOW_CTX_TASK_ID=task_1
+AIRFLOW_CTX_EXECUTION_DATE=2025-11-23T07:36:48.370834+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-11-23T07:36:48.370834+00:00
+[2025-11-23T07:36:50.430+0000] {logging_mixin.py:120} INFO - hello audiance, welcome to aiflow learing
+[2025-11-23T07:36:50.433+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-11-23T07:36:50.456+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=simple_python_dag, task_id=task_1, execution_date=20251123T073648, start_date=20251123T073649, end_date=20251123T073650
+[2025-11-23T07:36:50.524+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2025-11-23T07:36:50.560+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

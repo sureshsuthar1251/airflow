@@ -1,0 +1,11 @@
+{"timestamp":"2025-12-13T12:17:46.655909Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-12-13T12:17:46.657925Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/project1-api-.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-12-13T12:17:47.645656Z","level":"info","event":"   Unnamed: 0        updated  ... recoveredPerOneMillion criticalPerOneMillion","logger":"task.stdout"}
+{"timestamp":"2025-12-13T12:17:47.646218Z","level":"info","event":"0           0  1765628147662  ...                5179.32                   0.0","logger":"task.stdout"}
+{"timestamp":"2025-12-13T12:17:47.647173Z","level":"info","event":"1           1  1765628147654  ...              115209.32                   0.0","logger":"task.stdout"}
+{"timestamp":"2025-12-13T12:17:47.647720Z","level":"info","event":"2           2  1765628147657  ...                4036.61                   0.0","logger":"task.stdout"}
+{"timestamp":"2025-12-13T12:17:47.648128Z","level":"info","event":"3           3  1765628147714  ...                   0.00                   0.0","logger":"task.stdout"}
+{"timestamp":"2025-12-13T12:17:47.648543Z","level":"info","event":"4           4  1765628147692  ...                2952.52                   0.0","logger":"task.stdout"}
+{"timestamp":"2025-12-13T12:17:47.648968Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-13T12:17:47.649470Z","level":"info","event":"[5 rows x 24 columns]","logger":"task.stdout"}
+{"timestamp":"2025-12-13T12:17:49.606893Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":215}

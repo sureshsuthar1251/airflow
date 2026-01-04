@@ -1,0 +1,28 @@
+[2025-11-22T12:35:36.876+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: dag2.first_task manual__2025-11-22T12:35:34.552030+00:00 [queued]>
+[2025-11-22T12:35:36.894+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: dag2.first_task manual__2025-11-22T12:35:34.552030+00:00 [queued]>
+[2025-11-22T12:35:36.895+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2025-11-22T12:35:36.895+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 6
+[2025-11-22T12:35:36.896+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2025-11-22T12:35:36.968+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): first_task> on 2025-11-22 12:35:34.552030+00:00
+[2025-11-22T12:35:36.976+0000] {standard_task_runner.py:55} INFO - Started process 1002 to run task
+[2025-11-22T12:35:36.982+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'dag2', 'first_task', 'manual__2025-11-22T12:35:34.552030+00:00', '--job-id', '47', '--raw', '--subdir', 'DAGS_FOLDER/dag2.py', '--cfg-path', '/tmp/tmpbi7_wxw0']
+[2025-11-22T12:35:36.983+0000] {standard_task_runner.py:83} INFO - Job 47: Subtask first_task
+[2025-11-22T12:35:37.100+0000] {task_command.py:376} INFO - Running <TaskInstance: dag2.first_task manual__2025-11-22T12:35:34.552030+00:00 [running]> on host f42cc5a7ff63
+[2025-11-22T12:35:37.213+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=admin
+AIRFLOW_CTX_DAG_ID=dag2
+AIRFLOW_CTX_TASK_ID=first_task
+AIRFLOW_CTX_EXECUTION_DATE=2025-11-22T12:35:34.552030+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-11-22T12:35:34.552030+00:00
+[2025-11-22T12:35:37.215+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2025-11-22T12:35:37.217+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "hello, lets learn Airflow..."']
+[2025-11-22T12:35:37.241+0000] {subprocess.py:86} INFO - Output:
+[2025-11-22T12:35:37.246+0000] {subprocess.py:93} INFO - hello, lets learn Airflow...
+[2025-11-22T12:35:37.248+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-11-22T12:35:37.287+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=dag2, task_id=first_task, execution_date=20251122T123534, start_date=20251122T123536, end_date=20251122T123537
+[2025-11-22T12:35:37.316+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2025-11-22T12:35:37.343+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

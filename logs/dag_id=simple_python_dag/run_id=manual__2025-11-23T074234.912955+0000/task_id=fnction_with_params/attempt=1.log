@@ -1,0 +1,24 @@
+[2025-11-23T07:42:39.372+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: simple_python_dag.fnction_with_params manual__2025-11-23T07:42:34.912955+00:00 [queued]>
+[2025-11-23T07:42:39.388+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: simple_python_dag.fnction_with_params manual__2025-11-23T07:42:34.912955+00:00 [queued]>
+[2025-11-23T07:42:39.389+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2025-11-23T07:42:39.390+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2025-11-23T07:42:39.392+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2025-11-23T07:42:39.421+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): fnction_with_params> on 2025-11-23 07:42:34.912955+00:00
+[2025-11-23T07:42:39.430+0000] {standard_task_runner.py:55} INFO - Started process 847 to run task
+[2025-11-23T07:42:39.439+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'simple_python_dag', 'fnction_with_params', 'manual__2025-11-23T07:42:34.912955+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/python_dag_example.py', '--cfg-path', '/tmp/tmp9794110y']
+[2025-11-23T07:42:39.440+0000] {standard_task_runner.py:83} INFO - Job 62: Subtask fnction_with_params
+[2025-11-23T07:42:39.603+0000] {task_command.py:376} INFO - Running <TaskInstance: simple_python_dag.fnction_with_params manual__2025-11-23T07:42:34.912955+00:00 [running]> on host f9e4ee478640
+[2025-11-23T07:42:39.713+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=simple_python_dag
+AIRFLOW_CTX_TASK_ID=fnction_with_params
+AIRFLOW_CTX_EXECUTION_DATE=2025-11-23T07:42:34.912955+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2025-11-23T07:42:34.912955+00:00
+[2025-11-23T07:42:39.714+0000] {logging_mixin.py:120} INFO - hello my name is suresh , i m 24 years old and am basically from pune 
+[2025-11-23T07:42:39.715+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-11-23T07:42:39.733+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=simple_python_dag, task_id=fnction_with_params, execution_date=20251123T074234, start_date=20251123T074239, end_date=20251123T074239
+[2025-11-23T07:42:39.785+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2025-11-23T07:42:39.816+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
