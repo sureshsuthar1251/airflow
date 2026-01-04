@@ -38,7 +38,7 @@ with DAG(
 
         rows = [
             ('India', 'Asia'),
-            ('Germany', 'Europe'),
+            ('Germany', 'fsfsf'),
             ('Argentina', 'South America'),
             ('Ghana', 'Africa'),
             ('Japan', 'Asia'),
