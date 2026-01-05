@@ -13,7 +13,7 @@ def files_inside_gcs_bucket():
   
 
 
-with DAG(DAG_ID = 'gcp_dummy_project', schedule_interval = '@daily',start_date = datetime(2026,01,05)   ) as dag:
+with DAG(dag_id = 'gcp_dummy_project', schedule_interval = None,start_date = datetime(2026,01,05)   ) as dag:
   list_gcs_objects = PythonOperator(
     task_id = 'list_gcs_objects',
     python_callable = 'files_inside_gcs_bucket'
